@@ -1,7 +1,7 @@
 const computer_list = document.querySelector('.computer-list')
 
 const displayComputers = async () => {
-    const uri = "http://jerrylabs.herokuapp.com//computers"
+    const uri = "http://jerrylabs.herokuapp.com/computers"
 
     const res = await fetch(uri)
     const computers = await res.json()
