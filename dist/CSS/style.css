@@ -134,21 +134,6 @@ input{
     justify-content: space-between;
 }
 
-/* .computer a {
-    text-decoration: none;
-    background: green;
-    border-radius: 5%;
-    color: white;
-    align-self: center;
-    padding: 2%;
-} */
-
-/* .computer a:hover {
-    transform: translateY(3px);
-    background: rgb(1, 78, 1);
-    border: 2px solid lightgray;
-} */
-
 .computer-details{
     background: white;
     padding: 5%;

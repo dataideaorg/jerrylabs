@@ -7,7 +7,6 @@ event.preventDefault()
 const document = {
     name: form.name.value,
     number: form.number.value,
-    password: form.password.value,
     computer_id: null
 }
 
