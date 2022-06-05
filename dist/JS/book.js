@@ -4,9 +4,9 @@ const form = document.querySelector('.book-form')
 
 const computer_id = new URLSearchParams(location.search).get('id')
 
-const computer_uri = `http://jerrylabs.herokuapp.com/computers/${computer_id}`
+const computer_uri = `https://jerrylabs.herokuapp.com/computers/${computer_id}`
 
-const users_uri = 'http://jerrylabs.herokuapp.com/users'
+const users_uri = 'https://jerrylabs.herokuapp.com/users'
 
 const displayDetails = async () => {
 
