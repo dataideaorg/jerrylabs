@@ -175,7 +175,12 @@ input{
     border: 2px solid lightgray;
 }
 
-
+textarea{
+    width: 100%;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 5%;
+}
 
 /* Signup */
 
