@@ -15,7 +15,7 @@ const displayComputers = async () => {
             <div class = "computer">
                 <div>
                     <h2>${computer.name}</h2>
-                    <a href= "/book.html?id=${computer.id}" class ="book-button">Book</a>
+                    <a href= "book.html?id=${computer.id}" class ="book-button">Book</a>
                 </div>
                 <p>${computer.details}</p>
             </div>
