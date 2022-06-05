@@ -20,5 +20,5 @@ await fetch(uri,
     }
 })
 
-location.assign('/index.html')
+location.assign('index.html')
 })

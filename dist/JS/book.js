@@ -55,14 +55,14 @@ const bookComputer = async (event) => {
                 })
     
                 alert(`You've booked computer ${computer_id}`)
-                location.assign('/index.html')
+                location.assign('index.html')
             }else{
                 alert(`User already booked computer ${user.computer_id}`)
-                location.assign('/index.html')
+                location.assign('index.html')
             }
     }else{
         alert('User not registered!')
-        location.assign('/signup.html')
+        location.assign('signup.html')
     }
 
     }
