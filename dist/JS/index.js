@@ -13,11 +13,12 @@ const displayComputers = async () => {
 
             template += `
             <div class = "computer">
-                <div>
-                    <h2>${computer.name}</h2>
-                    <a type = "text/html" href= "book.html?id=${computer.id}" class ="book-button">Book</a>
-                </div>
-                <p>${computer.details}</p>
+                <a type = "text/html" href= "book.html?id=${computer.id}">
+                    <div>
+                        <h2>${computer.name}</h2>
+                    </div>
+                    <p>${computer.details}</p>
+                </a>
             </div>
         `
 

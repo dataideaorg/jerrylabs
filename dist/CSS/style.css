@@ -16,6 +16,10 @@ h1, h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 .company-name {
     color: green;
 }
@@ -28,13 +32,13 @@ h1, h2 {
     width: 90%;
     margin: auto;
     font-size: small;
-    
+    height: fit-content;  
 }
 
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 2.5%;
+    padding: 5%;
     border: 2px solid lightgray;
     box-shadow: 1px 1px 1px lightgray;
     background: whitesmoke;
@@ -44,7 +48,6 @@ nav{
 }
 
 nav a {
-    text-decoration: none;
     transition: border-bottom 0.1s linear;
     font-weight: 600;
 }
@@ -86,8 +89,8 @@ form h2{
 }
 
 input{
-    padding: 1%;
-    margin: 1%;
+    padding: 2.5%;
+    margin: 2.5%;
     width: 100%;
     font-size: medium;
     border-radius: 2.5px;
@@ -116,7 +119,7 @@ input{
 }
 
 .computer{
-    padding: 2%;
+    padding: 5%;
     margin-top: 1px;
     border-bottom: 1px solid #56b4d3;
 }
@@ -131,20 +134,20 @@ input{
     justify-content: space-between;
 }
 
-.computer a {
+/* .computer a {
     text-decoration: none;
     background: green;
     border-radius: 5%;
     color: white;
     align-self: center;
-    padding: 1.5%;
-}
+    padding: 2%;
+} */
 
-.computer a:hover {
+/* .computer a:hover {
     transform: translateY(3px);
     background: rgb(1, 78, 1);
     border: 2px solid lightgray;
-}
+} */
 
 .computer-details{
     background: white;
@@ -154,14 +157,20 @@ input{
     border: 2px solid lightgray;
 }
 
+.computer-details::after{
+    content: "";
+    display: block;
+    margin: 5%;
+}
+
 /* booking */
 .label{
     font-weight: bold;
 }
 
 .booking-form{
-    justify-content: start;
     border: 2px solid lightgray;
+    
 }
 
 .mt-5{
@@ -169,17 +178,19 @@ input{
     padding: 5%;
     border-radius: 5px;
     background: whitesmoke;
-    height: fit-content;
     border: 2px solid lightgray;
 }
 
 .mt-5 form{
     background: white;
     border-radius: 5px;
+    margin-top: 5%;
     padding: 5%;
     width: 100%;
     border: 2px solid lightgray;
 }
+
+
 
 /* Signup */
 
@@ -188,7 +199,7 @@ input{
     border-radius: 5px;
     padding: 5%;
     border: 2px solid lightgray;
-    margin: auto;
+    
 }
 
 @media screen and (min-width: 768px) {
