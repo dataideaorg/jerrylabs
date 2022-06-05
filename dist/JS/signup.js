@@ -1,6 +1,6 @@
 const form = document.querySelector('.signup-form')
 
-const uri = "http://localhost:3000/users"
+const uri = "http://jerrylabs.herokuapp.com/users"
 form.addEventListener('submit', async (event) => {
 event.preventDefault()
 
@@ -19,4 +19,6 @@ await fetch(uri,
         'Content-Type': 'application/json'
     }
 })
+
+location.assign('/index.html')
 })

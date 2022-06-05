@@ -9,21 +9,24 @@
 </head>
 <body>
     <div class="container">
+        <nav>
+            <h1 class="company-name"><span>Jerry</span>Labs</h1>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./signup.html">signup</a></li>
+            </ul>
+        </nav>
         <form action="" class="signup-form">
-            <h1>Welcome, signup</h1>
+            <h2>Welcome, Create account</h2>
             <label for="name">
-                Usename
-                <input type="text" name="name">
+                <p class="label">Usename</p>
+                <input type="text" name="name" placeholder="eg johndoe">
             </label>
             <label for="student_number">
-                Student Number
-                <input type="text" name="number">
+                <p class="label">Student Number</p>
+                <input type="text" name="number" placeholder="eg 1900101111">
             </label>
-            <label for="password">
-                Password
-                <input type="password" name="password">
-            </label>
-            <input type="submit" name="" value="Let's start">
+            <input type="submit" name="" value="Let's start" class="submit-button">
         </form>
     </div>
 

@@ -4,9 +4,9 @@ const form = document.querySelector('.book-form')
 
 const computer_id = new URLSearchParams(location.search).get('id')
 
-const computer_uri = `http://localhost:3000/computers/${computer_id}`
+const computer_uri = `http://jerrylabs.herokuapp.com/computers/${computer_id}`
 
-const users_uri = 'http://localhost:3000/users'
+const users_uri = 'http://jerrylabs.herokuapp.com/users'
 
 const displayDetails = async () => {
 
@@ -33,33 +33,37 @@ const bookComputer = async (event) => {
     const data = await res.json()
     const user = data[0]
 
-    if(user.computer_id == null){
+    if(user){
+        if(user.computer_id == null){
 
-        await fetch(computer_uri, 
-            {
-                method: 'PATCH',
-                body: JSON.stringify({booker_id: user.id}),
-                headers: {
-                    'Content-Type' : 'application/json'
-                }
-            })
-        
-        await fetch(`${users_uri}/${user.id}`, 
-            {
-                method: 'PATCH',
-                body: JSON.stringify({computer_id: parseInt(computer_id)}),
-                headers: {
-                    'Content-Type' : 'application/json'
-                }
-            })
-
-            alert(`You've booked computer ${computer_id}`)
-
-            location.assign('/index.html')
-        }else{
-            alert(`User already booked computer ${user.computer_id}`)
-            location.assign('/index.html')
-        }
+            await fetch(computer_uri, 
+                {
+                    method: 'PATCH',
+                    body: JSON.stringify({booker_id: user.id}),
+                    headers: {
+                        'Content-Type' : 'application/json'
+                    }
+                })
+            
+            await fetch(`${users_uri}/${user.id}`, 
+                {
+                    method: 'PATCH',
+                    body: JSON.stringify({computer_id: parseInt(computer_id)}),
+                    headers: {
+                        'Content-Type' : 'application/json'
+                    }
+                })
+    
+                alert(`You've booked computer ${computer_id}`)
+                location.assign('/index.html')
+            }else{
+                alert(`User already booked computer ${user.computer_id}`)
+                location.assign('/index.html')
+            }
+    }else{
+        alert('User not registered!')
+        location.assign('/signup.html')
+    }
 
     }
 
