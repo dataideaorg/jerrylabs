@@ -1,6 +1,6 @@
 const form = document.querySelector('.signup-form')
 
-const uri = "http://jerrylabs.herokuapp.com/users"
+const uri = "https://jerrylabs.herokuapp.com/users"
 form.addEventListener('submit', async (event) => {
 event.preventDefault()
 
