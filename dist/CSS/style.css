@@ -98,7 +98,7 @@ input{
 }
 
 .submit-button {
-    background: green;
+    background: linear-gradient(to left, #348f50, #348f50, #56b4d3);
     font-size: medium;
     color: white;
     border: none;
@@ -108,7 +108,7 @@ input{
 
 .submit-button:hover {
     transform: translateY(3px);
-    background: rgb(1, 78, 1);
+    background: linear-gradient(to right, #348f50, #348f50, #56b4d3);
 }
 
 .computer-list{
@@ -189,10 +189,15 @@ textarea{
     border-radius: 5px;
     padding: 5%;
     border: 2px solid lightgray;
+    margin: auto;
+    width: 100%;
     
 }
 
 @media screen and (min-width: 768px) {
+    nav, .computer, .computer-details, mt-5, mt-5 form, textarea, .signup-form{
+        padding: 2.5%;
+    }
     .container{
         width: 60%;
         margin: auto;
