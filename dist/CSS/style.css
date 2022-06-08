@@ -194,6 +194,12 @@ textarea{
     
 }
 
+/* graphs containers */
+.pie-chart-container, .bar-graph-container{
+    margin-top: 5%;
+    border-radius: 5px;
+} 
+
 @media screen and (min-width: 768px) {
     nav, .computer, .computer-details, mt-5, mt-5 form, textarea, .signup-form{
         padding: 2.5%;

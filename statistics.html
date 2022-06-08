@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="dist/CSS/style.css">
+    <title>statistics</title>
+    <link rel="stylesheet" href="dist/CSS/style.css">
+    <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -14,15 +15,13 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="signup.html">signup</a></li>
-                <li><a href="statistics.html">Stat</a></li>
+                <li><a href="statistics">Stat</a></li>
             </ul>
         </nav>
-       <div class="home-container">
-            <h2 class="home-heading">Select from our free computers</h1>
-            <div class="computer-list"></div>
-       </div>
+        <h2 class="label home-heading">Visualize our statistics</h2>
+        <div class="bar-graph-container"></div>
+        <div class="pie-chart-container"></div>
     </div>
-
-    <script src="dist/JS/index.js" type="text/javascript"></script>
+    <script src="dist/JS/statistics.js"></script>
 </body>
 </html>
