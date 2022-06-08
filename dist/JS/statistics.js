@@ -26,7 +26,7 @@ const displayGraphs = async () => {
         showLegend: true
     }
 
-    Plotly.newPlot(bar_graph_container, data1, layout1, {scrollZoom: true})
+    Plotly.newPlot(bar_graph_container, data1, layout1, {scrollZoom: false})
 
     //pie chart of computers by operating system
     var trace2 = {
@@ -42,7 +42,7 @@ const displayGraphs = async () => {
         showLegend: true
     }
 
-    Plotly.newPlot(pie_chart_container, data2, layout2, {scrollZoom: true})
+    Plotly.newPlot(pie_chart_container, data2, layout2)
 
 
 }
